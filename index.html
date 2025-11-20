@@ -1,136 +1,199 @@
+<!DOCTYPE html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NewsSpectrum – Unbiased News, Side by Side</title>
-    <meta name="description" content="Every major story, every source, side-by-side with zero spin. See the full spectrum.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: '#2563eb',
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chicago South-Side Stabbing: Unbiased Breakdown – NewsSpectrum</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1d4ed8',
+            accent: '#0ea5e9',
           }
         }
       }
-    </script>
-    <style>
-      body { font-family: 'Inter', system-ui, sans-serif; }
-    </style>
+    }
+  </script>
 </head>
 <body class="bg-gray-50 text-gray-900">
 
   <!-- Header -->
-  <header class="bg-white shadow-sm sticky top-0 z-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
       <h1 class="text-3xl font-bold text-primary">NewsSpectrum</h1>
-      <nav class="space-x-8 text-lg">
-        <a href="#" class="text-gray-600 hover:text-primary">Home</a>
-        <a href="#" class="text-gray-600 hover:text-primary">About</a>
+      <nav class="space-x-8 text-lg hidden md:block">
+        <a href="/" class="text-gray-600 hover:text-primary">Home</a>
+        <a href="/about" class="text-gray-600 hover:text-primary">About</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="bg-gradient-to-r from-primary to-blue-700 text-white py-24">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <h2 class="text-5xl md:text-6xl font-extrabold mb-6">Every Story. Every Source.<br>Side by Side.</h2>
-      <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">No spin. No agenda. Just the pure facts + exactly how each outlet twists them.</p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
-        <input type="text" placeholder="Search any topic (e.g., election, murder case…)" class="px-6 py-4 rounded-lg text-gray-900 text-lg w-full">
-        <button class="bg-white text-primary px-10 py-4 rounded-lg font-bold hover:bg-gray-100">Search</button>
-      </div>
+  <!-- Unbiased Title Bar -->
+  <div class="bg-primary text-white py-8">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <p class="text-sm uppercase tracking-wider mb-2 opacity-90">Homicide · Chicago, Illinois · November 15, 2025</p>
+      <h1 class="text-4xl md:text-5xl font-bold">Fatal Stabbing on Chicago's South Side: What We Know</h1>
     </div>
-  </section>
+  </div>
 
-  <!-- Example Story -->
-  <section class="py-20 bg-white">
+  <!-- Biased Headlines Carousel -->
+  <section class="py-8 bg-gray-100 overflow-x-auto">
     <div class="max-w-7xl mx-auto px-4">
-      <h3 class="text-4xl font-bold text-center mb-16">Live Example: Chicago Stabbing Case (Nov 2025)</h3>
+      <h2 class="text-2xl font-bold mb-6 text-center md:text-left">How Outlets Headlined It</h2>
+      <div class="flex gap-6 pb-4 snap-x snap-mandatory scrollbar-hide">
+        <div class="snap-center shrink-0 w-80 bg-white rounded-xl shadow-md p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-red-600 rounded"></div>
+            <div>
+              <div class="font-bold">CNN</div>
+              <div class="text-xs text-gray-500">2 hours ago</div>
+            </div>
+          </div>
+          <p class="text-lg leading-tight">"Another Preventable Tragedy in City Starved of Resources"</p>
+        </div>
+        <div class="snap-center shrink-0 w-80 bg-white rounded-xl shadow-md p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-blue-700 rounded"></div>
+            <div>
+              <div class="font-bold">Fox News</div>
+              <div class="text-xs text-gray-500">1 hour ago</div>
+            </div>
+          </div>
+          <p class="text-lg leading-tight">"Soft-on-Crime Policies Claim Another Life"</p>
+        </div>
+        <div class="snap-center shrink-0 w-80 bg-white rounded-xl shadow-md p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-gray-800 rounded"></div>
+            <div>
+              <div class="font-bold">Reuters</div>
+              <div class="text-xs text-gray-500">3 hours ago</div>
+            </div>
+          </div>
+          <p class="text-lg leading-tight">"Man Fatally Stabbed in Chicago, Suspect in Custody"</p>
+        </div>
+        <!-- Add as many as needed — it will scroll horizontally -->
+      </div>
+    </div>
+  </section>
 
-      <!-- Undisputed Facts -->
-      <div class="bg-gray-50 rounded-xl p-8 mb-12">
-        <h4 class="text-2xl font-bold mb-6">Undisputed Timeline of Facts</h4>
-        <ul class="space-y-4 text-lg">
-          <li>• Nov 15, 2025 – 8:42 PM: 28-year-old male stabbed multiple times in Chicago’s South Side.</li>
-          <li>• Nov 16 – Suspect (32-year-old local resident) arrested at scene. Knife recovered.</li>
-          <li>• Nov 17 – Bail set at $500,000. No prior violent record.</li>
-        </ul>
-        <p class="text-sm text-gray-500 mt-6">Sources: Chicago PD, court records</p>
+  <!-- Undisputed Facts -->
+  <section class="py-12 bg-white">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 text-center">Undisputed Facts</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="space-y-4">
+          <div class="flex items-start gap-4">
+            <span class="text-primary font-bold text-lg">•</span>
+            <p>November 15, 2025, 8:42 PM – 28-year-old male stabbed multiple times on South Side.</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="text-primary font-bold text-lg">•</span>
+            <p>Suspect (32-year-old local resident) arrested at scene, knife recovered.</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="text-primary font-bold text-lg">•</span>
+            <p>Bail set at $500,000 on November 17. No prior violent record.</p>
+          </div>
+        </div>
+        <div class="text-sm text-gray-600">
+          Sources: Chicago PD press release · Court records · Local affiliate footage
+        </div>
       </div>
 
-      <!-- Comparison Table -->
-      <div class="overflow-x-auto rounded-xl shadow-lg">
-        <table class="min-w-full divide-y divide-gray-200">
-          <thead class="bg-gray-900 text-white">
-            <tr>
-              <th class="px-6 py-4 text-left text-sm font-medium uppercase">Source</th>
-              <th class="px-6 py-4 text-left text-sm font-medium uppercase">Key Emphasis</th>
-              <th class="px-6 py-4 text-left text-sm font-medium uppercase">Omitted / Downplayed</th>
-              <th class="px-6 py-4 text-left text-sm font-medium uppercase">Bias Score</th>
-            </tr>
-          </thead>
-          <tbody class="bg-white divide-y divide-gray-200">
-            <tr>
-              <td class="px-6 py-4 font-medium">CNN</td>
-              <td class="px-6 py-4">Systemic urban violence, calls for social programs</td>
-              <td class="px-6 py-4">Victim’s prior arrests, suspect’s mental-health history</td>
-              <td class="px-6 py-4"><span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-bold">Left 7/10</span></td>
-            </tr>
-            <tr class="bg-gray-50">
-              <td class="px-6 py-4 font-medium">Fox News</td>
-              <td class="px-6 py-4">Soft-on-crime policies, “dangerous streets”</td>
-              <td class="px-6 py-4">Local poverty stats, lack of mental-health funding</td>
-              <td class="px-6 py-4"><span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-bold">Right 8/10</span></td>
-            </tr>
-            <tr>
-              <td class="px-6 py-4 font-medium">Reuters</td>
-              <td class="px-6 py-4">Straight facts, arrest details</td>
-              <td class="px-6 py-4">Minimal editorializing</td>
-              <td class="px-6 py-4"><span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-bold">Center 2/10</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Quote Comparison -->
-      <div class="grid md:grid-cols-3 gap-8 mt-12">
-        <div class="border-l-4 border-red-600 pl-6">
-          <p class="font-semibold mb-2">CNN headline quote</p>
-          <blockquote class="italic text-lg">“Another preventable tragedy in a city starved of resources.”</blockquote>
-        </div>
-        <div class="border-l-4 border-blue-600 pl-6">
-          <p class="font-semibold mb-2">Fox News headline quote</p>
-          <blockquote class="italic text-lg">“When will leaders finally put law and order first?”</blockquote>
-        </div>
-        <div class="border-l-4 border-green-600 pl-6">
-          <p class="font-semibold mb-2">Reuters lead sentence</p>
-          <blockquote class="italic text-lg">“Police arrested a 32-year-old man after a fatal stabbing late Saturday.”</blockquote>
+      <!-- Photo Gallery (if photos exist) -->
+      <div class="mt-12">
+        <h3 class="text-xl font-semibold mb-4">Verified Images from the Scene</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <img src="https://example.com/scene1.jpg" alt="Police tape" class="rounded-lg shadow">
+          <img src="https://example.com/scene2.jpg" alt="Arrest" class="rounded-lg shadow">
+          <!-- more images -->
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Waitlist -->
-  <section class="bg-gray-900 text-white py-24">
-    <div class="max-w-4xl mx-auto text-center px-4">
-      <h3 class="text-4xl font-bold mb-6">Be the First to See Real Comparisons</h3>
-      <p class="text-xl mb-10">Launching the first 10 stories this month. Join the waitlist – no spam ever.</p>
-      <form action="https://tally.so/r/w5eP7L" method="POST" class="max-w-lg mx-auto space-y-6">
-        <input type="email" name="email" placeholder="you@example.com" required class="w-full px-6 py-4 rounded-lg text-gray-900 text-lg">
-        <button type="submit" class="w-full bg-primary hover:bg-blue-700 text-white font-bold py-4 rounded-lg text-xl">Join Waitlist</button>
-      </form>
-      <p class="text-sm mt-6 opacity-75">Powered by Tally (free) – you’ll own the list forever</p>
+  <!-- Mainstream Spectrum -->
+  <section class="py-12 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-10 text-center">The Mainstream Spectrum</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Repeat for each mainstream source -->
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 bg-red-600 rounded"></div>
+            <div>
+              <div class="font-bold text-lg">CNN</div>
+              <div class="text-sm text-gray-500">Sarah Kline · 14 years</div>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div>
+              <p class="font-semibold text-green-700">Key Emphasis</p>
+              <p class="text-sm">Systemic urban violence, need for social programs</p>
+            </div>
+            <div>
+              <p class="font-semibold text-red-700">Omitted/Downplayed</p>
+              <p class="text-sm">Victim's prior arrests, suspect's mental-health history</p>
+            </div>
+          </div>
+        </div>
+        <!-- Fox, Reuters, etc. -->
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-black text-white py-10 text-center">
-    <p>© 2025 NewsSpectrum • Built for truth, not clicks.</p>
-  </footer>
+  <!-- Independent Spectrum -->
+  <section class="py-12 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-10 text-center">The Independent Spectrum</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <h3 class="font-bold text-lg mb-3 text-orange-600">YouTube Creator</h3>
+          <p class="font-medium">Tim Pool</p>
+          <p class="text-sm text-gray-600 mb-3">1.4M subscribers · Timcast IRL</p>
+          <p class="text-sm">"This is what happens when you defund the police and release violent offenders..."</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <h3 class="font-bold text-lg mb-3 text-purple-600">Podcast</h3>
+          <p class="font-medium">Breaking Points</p>
+          <p class="text-sm text-gray-600 mb-3">Krystal Ball & Saagar Enjeti</p>
+          <p class="text-sm">"Both parties are ignoring the real crisis in American cities..."</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <h3 class="font-bold text-lg mb-3 text-green-600">Blog / Substack</h3>
+          <p class="font-medium">Matt Taibbi</p>
+          <p class="text-sm text-gray-600 mb-3">Racket News</p>
+          <p class="text-sm">"The media is burying the real story again..."</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Top Comments Ticker -->
+  <section class="py-12 bg-black text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 text-center">What People Are Saying</h2>
+      <div class="ticker whitespace-nowrap">
+        <div class="inline-block animate-marquee">
+          <span class="mx-12">BlueSky @truthseeker88: "Finally someone showing the full picture" ·</span>
+          <span class="mx-12 text-cyan-400">Truth Social @MAGAWarrior22: "About time the media got called out" ·</span>
+          <span class="mx-12 text-blue-400">X @realist99: "This should be the only way news is presented" ·</span>
+          <span class="mx-12 text-orange-400">Reddit u/NeutralObserver: "This is the future of journalism" ·</span>
+          <!-- repeats -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+    .scrollbar-hide::-webkit-scrollbar { display: none; }
+    .animate-marquee { animation: marquee 30s linear infinite; }
+    @keyframes marquee { 0% { transform: translateX(0%); } 100% { transform: translateX(-100%); } }
+  </style>
 </body>
 </html>
