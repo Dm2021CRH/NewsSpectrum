@@ -35,4 +35,102 @@
   </header>
 
   <!-- Hero -->
-  <section class
+  <section class="bg-gradient-to-r from-primary to-blue-700 text-white py-24">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-5xl md:text-6xl font-extrabold mb-6">Every Story. Every Source.<br>Side by Side.</h2>
+      <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">No spin. No agenda. Just the pure facts + exactly how each outlet twists them.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
+        <input type="text" placeholder="Search any topic (e.g., election, murder case…)" class="px-6 py-4 rounded-lg text-gray-900 text-lg w-full">
+        <button class="bg-white text-primary px-10 py-4 rounded-lg font-bold hover:bg-gray-100">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Example Story -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h3 class="text-4xl font-bold text-center mb-16">Live Example: Chicago Stabbing Case (Nov 2025)</h3>
+
+      <!-- Undisputed Facts -->
+      <div class="bg-gray-50 rounded-xl p-8 mb-12">
+        <h4 class="text-2xl font-bold mb-6">Undisputed Timeline of Facts</h4>
+        <ul class="space-y-4 text-lg">
+          <li>• Nov 15, 2025 – 8:42 PM: 28-year-old male stabbed multiple times in Chicago’s South Side.</li>
+          <li>• Nov 16 – Suspect (32-year-old local resident) arrested at scene. Knife recovered.</li>
+          <li>• Nov 17 – Bail set at $500,000. No prior violent record.</li>
+        </ul>
+        <p class="text-sm text-gray-500 mt-6">Sources: Chicago PD, court records</p>
+      </div>
+
+      <!-- Comparison Table -->
+      <div class="overflow-x-auto rounded-xl shadow-lg">
+        <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="px-6 py-4 text-left text-sm font-medium uppercase">Source</th>
+              <th class="px-6 py-4 text-left text-sm font-medium uppercase">Key Emphasis</th>
+              <th class="px-6 py-4 text-left text-sm font-medium uppercase">Omitted / Downplayed</th>
+              <th class="px-6 py-4 text-left text-sm font-medium uppercase">Bias Score</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200">
+            <tr>
+              <td class="px-6 py-4 font-medium">CNN</td>
+              <td class="px-6 py-4">Systemic urban violence, calls for social programs</td>
+              <td class="px-6 py-4">Victim’s prior arrests, suspect’s mental-health history</td>
+              <td class="px-6 py-4"><span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-bold">Left 7/10</span></td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="px-6 py-4 font-medium">Fox News</td>
+              <td class="px-6 py-4">Soft-on-crime policies, “dangerous streets”</td>
+              <td class="px-6 py-4">Local poverty stats, lack of mental-health funding</td>
+              <td class="px-6 py-4"><span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-bold">Right 8/10</span></td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 font-medium">Reuters</td>
+              <td class="px-6 py-4">Straight facts, arrest details</td>
+              <td class="px-6 py-4">Minimal editorializing</td>
+              <td class="px-6 py-4"><span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-bold">Center 2/10</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Quote Comparison -->
+      <div class="grid md:grid-cols-3 gap-8 mt-12">
+        <div class="border-l-4 border-red-600 pl-6">
+          <p class="font-semibold mb-2">CNN headline quote</p>
+          <blockquote class="italic text-lg">“Another preventable tragedy in a city starved of resources.”</blockquote>
+        </div>
+        <div class="border-l-4 border-blue-600 pl-6">
+          <p class="font-semibold mb-2">Fox News headline quote</p>
+          <blockquote class="italic text-lg">“When will leaders finally put law and order first?”</blockquote>
+        </div>
+        <div class="border-l-4 border-green-600 pl-6">
+          <p class="font-semibold mb-2">Reuters lead sentence</p>
+          <blockquote class="italic text-lg">“Police arrested a 32-year-old man after a fatal stabbing late Saturday.”</blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Waitlist -->
+  <section class="bg-gray-900 text-white py-24">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <h3 class="text-4xl font-bold mb-6">Be the First to See Real Comparisons</h3>
+      <p class="text-xl mb-10">Launching the first 10 stories this month. Join the waitlist – no spam ever.</p>
+      <form action="https://tally.so/r/w5eP7L" method="POST" class="max-w-lg mx-auto space-y-6">
+        <input type="email" name="email" placeholder="you@example.com" required class="w-full px-6 py-4 rounded-lg text-gray-900 text-lg">
+        <button type="submit" class="w-full bg-primary hover:bg-blue-700 text-white font-bold py-4 rounded-lg text-xl">Join Waitlist</button>
+      </form>
+      <p class="text-sm mt-6 opacity-75">Powered by Tally (free) – you’ll own the list forever</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-10 text-center">
+    <p>© 2025 NewsSpectrum • Built for truth, not clicks.</p>
+  </footer>
+
+</body>
+</html>
