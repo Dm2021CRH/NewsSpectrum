@@ -68,6 +68,44 @@ jsx<section class="py-8 bg-gray-100">
   </section>
         `,
       }}
+    />jsx<section class="py-10 bg-white border-t-4 border-b-4 border-primary">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-3">Undisputed Facts</h2>
+      <p class="text-center text-sm text-gray-600 mb-8">
+        Verified timeline — Sources: 
+        <a href="#" class="text-primary underline">Chicago PD Press Release</a> · 
+        <a href="#" class="text-primary underline">Cook County Court Records</a> · 
+        <a href="#" class="text-primary underline">ABC7 Chicago Footage</a>
+      </p>
+      <div class="space-y-6 text-lg">
+        <div class="flex items-start gap-4">
+          <span class="text-primary font-bold">•</span>
+          <div>
+            <strong>November 15, 2025 – 8:42 PM</strong><br>
+            28-year-old male stabbed multiple times at 63rd & Halsted, South Side Chicago
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="text-primary font-bold">•</span>
+          <div>
+            <strong>8:47 PM</strong><br>
+            Officers arrive; suspect arrested on scene with knife
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="text-primary font-bold">•</span>
+          <div>
+            <strong>November 17, 2025</strong><br>
+            Bail set at $500,000. No prior violent convictions
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+        `,
+      }}
     />
+  );
+}
   );
 }
