@@ -109,3 +109,40 @@ jsx<section class="py-8 bg-gray-100">
 }
   );
 }
+jsx<section class="py-10 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-2">The Mainstream Spectrum</h2>
+      <p class="text-gray-600 mb-8">What each outlet emphasized — and what they left out</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white border rounded-xl p-6 shadow">
+          <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-red-600 rounded"></div><div class="font-bold">CNN</div></div>
+          <p class="font-semibold text-green-700 text-sm">Key Quote</p>
+          <p class="text-sm italic mb-3">"Decades of disinvestment have left communities without the mental-health and youth programs..."</p>
+          <p class="font-semibold text-red-700 text-sm">Unique in Their Story</p>
+          <p class="text-sm">CNN uniquely included data on Chicago's $200M cut in mental health funding since 2015, with interviews from community activists on youth violence prevention — a socio-economic lens not in Fox News's policy blame or Reuters's timeline focus.</p>
+          <p class="text-xs text-gray-500 mt-3">Sarah Kline · 14 yrs</p>
+        </div>
+        <div class="bg-white border rounded-xl p-6 shadow">
+          <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-blue-700 rounded"></div><div class="font-bold">Fox News</div></div>
+          <p class="font-semibold text-green-700 text-sm">Key Quote</p>
+          <p class="text-sm italic mb-3">"This is what happens when you defund police and let violent offenders walk free..."</p>
+          <p class="font-semibold text-red-700 text-sm">Unique in Their Story</p>
+          <p class="text-sm">Fox News uniquely cited 2023 bail reform stats (40% recidivism rate in South Side cases), with commentary from law enforcement unions — an accountability angle absent from CNN's social funding emphasis or BBC's international comparison.</p>
+          <p class="text-xs text-gray-500 mt-3">John Doe · 12 yrs</p>
+        </div>
+        <div class="bg-white border rounded-xl p-6 shadow">
+          <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-gray-800 rounded"></div><div class="font-bold">Reuters</div></div>
+          <p class="font-semibold text-green-700 text-sm">Key Quote</p>
+          <p class="text-sm italic mb-3">"Police responded at 8:42 p.m.; the victim was pronounced dead at the hospital."</p>
+          <p class="font-semibold text-red-700 text-sm">Unique in Their Story</p>
+          <p class="text-sm">Reuters uniquely provided a minute-by-minute police radio transcript and court docket details, which CNN and Fox News skipped for narrative — a procedural focus making it objective but omitting policy debates.</p>
+          <p class="text-xs text-gray-500 mt-3">Jane Smith · 20 yrs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+        `,
+      }}
+    />
+  );
+}
