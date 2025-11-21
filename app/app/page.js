@@ -146,3 +146,34 @@ jsx<section class="py-10 bg-white">
     />
   );
 }
+jsx<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="bg-white border rounded-xl p-6 shadow">
+      <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-orange-600 rounded"></div><div class="font-bold">The Australian</div></div>
+      <p class="font-semibold text-green-700 text-sm">Key Quote</p>
+      <p class="text-sm italic mb-3">"Yet another example of America's inner-city breakdown making headlines worldwide."</p>
+      <p class="font-semibold text-red-700 text-sm">Unique in Their Story</p>
+      <p class="text-sm">The Australian uniquely framed it as a global embarrassment, comparing it to Australian crime trends and quoting experts on "exportable lessons" for Sydney — an outsider’s view not in U.S.-centric CNN or Fox News.</p>
+      <p class="text-xs text-gray-500 mt-3">Emma Wilson · 11 yrs</p>
+    </div>
+    <div class="bg-white border rounded-xl p-6 shadow">
+      <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-black rounded"></div><div class="font-bold">BBC</div></div>
+      <p class="font-semibold text-green-700 text-sm">Key Quote</p>
+      <p class="text-sm italic mb-3">"Chicago continues to grapple with high levels of violent crime."</p>
+      <p class="font-semibold text-red-700 text-sm">Unique in Their Story</p>
+      <p class="text-sm">BBC uniquely compared it to London's knife crime epidemics, with UK Home Office data — a cross-cultural angle not in Al Jazeera's inequality focus or CNBC's economic impact.</p>
+      <p class="text-xs text-gray-500 mt-3">David Smith · 18 yrs</p>
+    </div>
+    <div class="bg-white border rounded-xl p-6 shadow">
+      <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-teal-700 rounded"></div><div class="font-bold">Al Jazeera English</div></div>
+      <p class="font-semibold text-green-700 text-sm">Key Quote</p>
+      <p class="text-sm italic mb-3">"Another deadly incident in a city plagued by systemic inequality and gun violence."</p>
+      <p class="font-semibold text-red-700 text-sm">Unique in Their Story</p>
+      <p class="text-sm">Al Jazeera uniquely highlighted racial disparities, quoting activists on "redlining's legacy" and comparing it to Rio de Janeiro — a human rights lens not in BBC's overview or The Young Turks' policy rants.</p>
+      <p class="text-xs text-gray-500 mt-3">Aisha Khan · 10 yrs</p>
+    </div>
+  </div>
+        `,
+      }}
+    />
+  );
+}
