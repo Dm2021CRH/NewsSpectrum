@@ -6,22 +6,12 @@
   <title>Chicago South-Side Stabbing: Unbiased Breakdown – NewsSpectrum</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#1d4ed8',
-            accent: '#0ea5e9',
-          }
-        }
-      }
-    }
+    tailwind.config = { theme: { extend: { colors: { primary: '#1d4ed8' } } } }
   </script>
   <style>
-    body { font-family: 'Inter', system-ui, sans-serif; }
     .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
     .scrollbar-hide::-webkit-scrollbar { display: none; }
-    .animate-marquee { animation: marquee 30s linear infinite; }
+    .animate-marquee { animation: marquee 35s linear infinite; }
     @keyframes marquee { 0% { transform: translateX(0%); } 100% { transform: translateX(-100%); } }
   </style>
 </head>
@@ -38,114 +28,138 @@
     </div>
   </header>
 
-  <!-- Unbiased Title Bar -->
-  <div class="bg-primary text-white py-8">
+  <!-- Unbiased Title -->
+  <div class="bg-primary text-white py-10">
     <div class="max-w-5xl mx-auto px-4 text-center">
       <p class="text-sm uppercase tracking-wider mb-2 opacity-90">Homicide · Chicago, Illinois · November 15, 2025</p>
-      <h1 class="text-3xl md:text-4xl font-bold">Fatal Stabbing on Chicago's South Side: What We Know</h1>
+      <h1 class="text-4xl md:text-5xl font-bold">Fatal Stabbing on Chicago's South Side: What We Know</h1>
     </div>
   </div>
 
-  <!-- Biased Headlines Carousel (Ultra-Compact One-Line) -->
-  <section class="py-6 bg-gray-100 overflow-x-auto">
+  <!-- How Outlets Headlined It – Full headlines, taller cards -->
+  <section class="py-8 bg-gray-100">
     <div class="max-w-7xl mx-auto px-4">
-      <div class="border-t border-b border-gray-300 py-4 mb-4">
-        <h2 class="text-xl font-bold">How Outlets Headlined It</h2>
-        <p class="text-sm text-gray-600">Different spins, same event — see the exact wording each outlet chose</p>
-      </div>
-      <div class="flex gap-4 pb-2 snap-x snap-mandatory scrollbar-hide">
-        <div class="snap-center shrink-0 w-64 h-16 bg-white rounded-lg shadow flex items-center gap-3 px-4 border">
-          <div class="w-6 h-6 bg-red-600 rounded"></div>
-          <div class="flex-1 min-w-0">
-            <div class="font-bold text-xs truncate">CNN</div>
-            <p class="text-xs text-gray-600 truncate">"Another Preventable Tragedy in City Starved of Resources"</p>
-            <p class="text-xs text-gray-500">2 hours ago</p>
+      <h2 class="text-2xl font-bold mb-2">How Outlets Headlined It</h2>
+      <p class="text-sm text-gray-600 mb-6">Exact headlines from major sources</p>
+      <div class="flex gap-5 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4">
+        <div class="snap-center shrink-0 w-80 bg-white rounded-xl shadow p-5 border">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-red-600 rounded"></div>
+            <div class="font-bold">CNN · 2h ago</div>
           </div>
-          <div class="text-xs font-medium text-blue-600">2.8/10</div>
+          <p class="text-sm leading-tight">"Another Preventable Tragedy in City Starved of Resources and Overwhelmed by Gun Violence Crisis"</p>
+          <div class="mt-3 text-xs font-medium text-blue-600">Bias 2.8 / 10</div>
         </div>
-        <div class="snap-center shrink-0 w-64 h-16 bg-white rounded-lg shadow flex items-center gap-3 px-4 border">
-          <div class="w-6 h-6 bg-blue-700 rounded"></div>
-          <div class="flex-1 min-w-0">
-            <div class="font-bold text-xs truncate">Fox News</div>
-            <p class="text-xs text-gray-600 truncate">"Soft-on-Crime Policies Claim Another Life"</p>
-            <p class="text-xs text-gray-500">1 hour ago</p>
+        <div class="snap-center shrink-0 w-80 bg-white rounded-xl shadow p-5 border">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-blue-700 rounded"></div>
+            <div class="font-bold">Fox News · 1h ago</div>
           </div>
-          <div class="text-xs font-medium text-red-600">7.2/10</div>
+          <p class="text-sm leading-tight">"Soft-on-Crime Democrat Policies Claim Another Innocent Life in Lawless Chicago"</p>
+          <div class="mt-3 text-xs font-medium text-red-600">Bias 7.2 / 10</div>
         </div>
-        <div class="snap-center shrink-0 w-64 h-16 bg-white rounded-lg shadow flex items-center gap-3 px-4 border">
-          <div class="w-6 h-6 bg-gray-800 rounded"></div>
-          <div class="flex-1 min-w-0">
-            <div class="font-bold text-xs truncate">Reuters</div>
-            <p class="text-xs text-gray-600 truncate">"Man Fatally Stabbed in Chicago, Suspect in Custody"</p>
-            <p class="text-xs text-gray-500">3 hours ago</p>
+        <div class="snap-center shrink-0 w-80 bg-white rounded-xl shadow p-5 border">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-gray-800 rounded"></div>
+            <div class="font-bold">Reuters · 3h ago</div>
           </div>
-          <div class="text-xs font-medium text-gray-600">4.1/10</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Undisputed Facts -->
-  <section class="py-8 bg-white">
-    <div class="max-w-5xl mx-auto px-4">
-      <div class="border-t border-b border-gray-300 py-4 mb-6">
-        <h2 class="text-2xl font-bold">Undisputed Facts</h2>
-        <p class="text-sm text-gray-600">Timeline of confirmed events from official sources</p>
-      </div>
-      <div class="space-y-3 text-sm">
-        <div class="flex items-start gap-2">
-          <span class="text-primary font-bold text-lg">•</span>
-          <p>November 15, 2025, 8:42 PM – 28-year-old male stabbed multiple times on South Side.</p>
-        </div>
-        <div class="flex items-start gap-2">
-          <span class="text-primary font-bold text-lg">•</span>
-          <p>Suspect (32-year-old local resident) arrested at scene, knife recovered.</p>
-        </div>
-        <div class="flex items-start gap-2">
-          <span class="text-primary font-bold text-lg">•</span>
-          <p>Bail set at $500,000 on November 17. No prior violent record.</p>
-        </div>
-      </div>
-      <p class="text-xs text-gray-500 mt-4">Sources: Chicago PD press release · Court records · Local affiliate footage</p>
-
-      <!-- Photo Gallery -->
-      <div class="mt-8">
-        <h3 class="text-lg font-semibold mb-3">Verified Images from the Scene</h3>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-          <img src="https://via.placeholder.com/200x150/gray?text=Scene+1" alt="Police tape" class="rounded-lg shadow">
-          <img src="https://via.placeholder.com/200x150/gray?text=Scene+2" alt="Arrest" class="rounded-lg shadow">
+          <p class="text-sm leading-tight">"Man Fatally Stabbed in Chicago, Suspect in Custody"</p>
+          <div class="mt-3 text-xs font-medium text-gray-600">Bias 4.1 / 10</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Mainstream Spectrum -->
-  <section class="py-8 bg-gray-50">
+  <section class="py-10 bg-white">
     <div class="max-w-7xl mx-auto px-4">
-      <div class="border-t border-b border-gray-300 py-4 mb-6">
-        <h2 class="text-2xl font-bold">The Mainstream Spectrum</h2>
-        <p class="text-sm text-gray-600">Key emphasis and omissions from major outlets</p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div class="bg-white rounded-lg shadow p-4 border">
-          <div class="flex items-center gap-2 mb-3">
-            <div class="w-8 h-8 bg-red-600 rounded"></div>
-            <div class="font-bold text-sm">CNN</div>
-          </div>
-          <p class="text-xs text-green-700 font-medium mb-1">Key Emphasis</p>
-          <p class="text-xs mb-2">Systemic urban violence, social programs</p>
-          <p class="text-xs text-red-700 font-medium mb-1">Omitted</p>
-          <p class="text-xs">Victim's prior arrests</p>
-          <div class="mt-2 text-xs text-gray-600">Sarah Kline · 14 years</div>
-          <div class="mt-1 text-xs font-medium text-blue-600">Bias: 2.8/10 ●●○○○○○○○○</div>
+      <h2 class="text-3xl font-bold mb-2">The Mainstream Spectrum</h2>
+      <p class="text-gray-600 mb-8">What each outlet emphasized — and what they left out</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white border rounded-xl p-6 shadow">
+          <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-red-600 rounded"></div><div class="font-bold">CNN</div></div>
+          <p class="font-semibold text-green-700 text-sm">Key Quote</p>
+          <p class="text-sm italic mb-3">"Decades of disinvestment have left communities without the mental-health and youth programs that prevent this kind of tragedy."</p>
+          <p class="font-semibold text-red-700 text-sm">Unique/Omitted</p>
+          <p class="text-sm">No mention of suspect’s prior arrests or victim’s criminal history.</p>
+          <p class="text-xs text-gray-500 mt-3">Sarah Kline · 14 yrs</p>
         </div>
-        <div class="bg-white rounded-lg shadow p-4 border">
-          <div class="flex items-center gap-2 mb-3">
-            <div class="w-8 h-8 bg-blue-700 rounded"></div>
-            <div class="font-bold text-sm">Fox News</div>
-          </div>
-          <p class="text-xs text-green-700 font-medium mb-1">Key Emphasis</p>
-          <p class="text-xs mb-2">Soft-on-crime policies, safety</p>
-          <p class="text-xs text-red-700 font-medium mb-1">Omitted</p>
-          <p class="text-xs">Poverty factors</p>
-          <div class="mt
+        <div class="bg-white border rounded-xl p-6 shadow">
+          <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-blue-700 rounded"></div><div class="font-bold">Fox News</div></div>
+          <p class="font-semibold text-green-700 text-sm">Key Quote</p>
+          <p class="text-sm italic mb-3">"This is what happens when you defund police and let violent offenders walk free on cashless bail."</p>
+          <p class="font-semibold text-red-700 text-sm">Unique/Omitted</p>
+          <p class="text-sm">No mention of poverty rates or lack of social services in the area.</p>
+          <p class="text-xs text-gray-500 mt-3">John Doe · 12 yrs</p>
+        </div>
+        <div class="bg-white border rounded-xl p-6 shadow">
+          <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-gray-800 rounded"></div><div class="font-bold">Reuters</div></div>
+          <p class="font-semibold text-green-700 text-sm">Key Quote</p>
+          <p class="text-sm italic mb-3">"Police responded to the scene at 8:42 p.m.; the victim was pronounced dead at the hospital."</p>
+          <p class="font-semibold text-red-700 text-sm">Unique/Omitted</p>
+          <p class="text-sm">Minimal context; no policy commentary.</p>
+          <p class="text-xs text-gray-500 mt-3">Jane Smith · 20 yrs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Independent Voices -->
+  <section class="py-10 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-2">Independent Voices</h2>
+      <p class="text-gray-600 mb-8">What creators outside traditional media are saying</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white border rounded-xl p-6 shadow">
+          <h3 class="font-bold text-orange-600 mb-2">YouTube Creator</h3>
+          <p class="font-medium">Tim Pool – Timcast IRL (1.4M subs)</p>
+          <p class="text-sm italic mt-3">"Chicago keeps voting for the same policies and wonders why bodies keep dropping."</p>
+          <p class="text-xs text-gray-600 mt-3">Unique angle: Connects incident to specific 2020 bail-reform law</p>
+        </div>
+        <div class="bg-white border rounded-xl p-6 shadow">
+          <h3 class="font-bold text-purple-600 mb-2">Podcast</h3>
+          <p class="font-medium">Breaking Points – Krystal & Saagar</p>
+          <p class="text-sm italic mt-3">"Both parties have failed these communities — one ignores crime, the other ignores poverty."</p>
+          <p class="text-xs text-gray-600 mt-3">Unique angle: Calls out bipartisan failure instead of one side</p>
+        </div>
+        <div class="bg-white border rounded-xl p-6 shadow">
+          <h3 class="font-bold text-green-600 mb-2">Blog / Substack</h3>
+          <p class="font-medium">Matt Taibbi – Racket News</p>
+          <p class="text-sm italic mt-3">"Local reporters told me off-record the victim had gang ties — none of that will appear in print."</p>
+          <p class="text-xs text-gray-600 mt-3">Unique angle: Reveals off-record info mainstream won’t touch</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What People Are Saying (Top Comments) -->
+  <section class="py-10 bg-black text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 text-center">What People Are Saying</h2>
+      <div class="flex gap-5 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4">
+        <div class="snap-center shrink-0 w-80 bg-gray-900 rounded-xl p-5">
+          <p class="text-sm mb-4">"Finally a site that shows all sides without the spin. Bookmarked."</p>
+          <a href="#" class="text-blue-400 text-xs hover:underline">@truthseeker88 on BlueSky →</a>
+        </div>
+        <div class="snap-center shrink-0 w-80 bg-gray-900 rounded-xl p-5">
+          <p class="text-sm mb-4">"About time someone called out the media lies. This should be required reading."</p>
+          <a href="#" class="text-blue-400 text-xs hover:underline">@MAGAWarrior22 on Truth Social →</a>
+        </div>
+        <div class="snap-center shrink-0 w-80 bg-gray-900 rounded-xl p-5">
+          <p class="text-sm mb-4">"This format is the future of news. Clean, fast, honest."</p>
+          <a href="#" class="text-blue-400 text-xs hover:underline">@realist99 on X →</a>
+        </div>
+        <div class="snap-center shrink-0 w-80 bg-gray-900 rounded-xl p-5">
+          <p class="text-sm mb-4">"Refreshing to see actual quotes side-by-side. No narrative, just facts."</p>
+          <a href="#" class="text-blue-400 text-xs hover:underline">u/NeutralObserver on Reddit →</a>
+        </div>
+        <div class="snap-center shrink-0 w-80 bg-gray-900 rounded-xl p-5">
+          <p class="text-sm mb-4">"Shared this with my whole group chat. Everyone needs to see this."</p>
+          <a href="#" class="text-blue-400 text-xs hover:underline">John D. on Facebook →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
