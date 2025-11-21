@@ -39,17 +39,34 @@ export default function Home() {
     </div>
   </div>
 
-  <!-- How Outlets Headlined It -->
-  <section class="py-8 bg-gray-100">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-2xl font-bold mb-2">How Outlets Headlined It</h2>
-      <p class="text-sm text-gray-600 mb-6">Exact headlines from major sources</p>
-      <div class="flex gap-5 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4">
-        <!-- Your three headline cards here — same as before -->
-        <!-- (they were in your original HTML, just copy them back) -->
+  {/* How Outlets Headlined It */}
+<section className="py-8 bg-gray-100">
+  <div className="max-w-7xl mx-auto px-4">
+    <h2 className="text-2xl font-bold mb-2">How Outlets Headlined It</h2>
+    <p className="text-sm text-gray-600 mb-6">
+      Exact headlines from major sources
+    </p>
+
+    <div className="flex gap-5 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4">
+      {/* ← Put your three headline cards here */}
+      {/* Example card (copy your real ones): */}
+      <div className="snap-start flex-shrink-0 w-80 bg-white rounded-lg shadow-md p-6">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="w-12 h-12 bg-red-600 rounded-full"></div>
+          <div>
+            <p className="font-semibold">CNN</p>
+            <p className="text-xs text-gray-500">2 hours ago</p>
+          </div>
+        </div>
+        <p className="text-lg font-medium">
+          “Breaking: Major headline exactly as published”
+        </p>
       </div>
+
+      {/* Add the other two cards the same way */}
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Undisputed Facts -->
   <section class="py-10 bg-white border-t-4 border-b-4 border-primary">
