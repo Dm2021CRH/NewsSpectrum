@@ -210,3 +210,65 @@ jsx<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     />
   );
 }
+sx<section class="py-10 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-2">Independent Voices</h2>
+      <p class="text-gray-600 mb-8">What creators outside traditional media are saying</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white border rounded-xl p-6 shadow">
+          <h3 class="font-bold text-orange-600 mb-2">YouTube Creator</h3>
+          <p class="font-medium">Tim Pool – Timcast IRL (1.4M subs)</p>
+          <p class="text-sm italic mt-3">"Chicago keeps voting for the same policies and wonders why bodies keep dropping."</p>
+          <p class="text-xs text-gray-600 mt-3">Unique: Analyzed voter turnout data from the South Side (25% in 2024 elections).</p>
+        </div>
+        <div class="bg-white border rounded-xl p-6 shadow">
+          <h3 class="font-bold text-purple-600 mb-2">Podcast</h3>
+          <p class="font-medium">Breaking Points – Krystal & Saagar</p>
+          <p class="text-sm italic mt-3">"Both parties have failed these communities — one ignores crime, the other ignores poverty."</p>
+          <p class="text-xs text-gray-600 mt-3">Unique: Dissected bipartisan bills (2022 crime funding vs. 2023 poverty aid cuts).</p>
+        </div>
+        <div class="bg-white border rounded-xl p-6 shadow">
+          <h3 class="font-bold text-green-600 mb-2">Blog / Substack</h3>
+          <p class="font-medium">Matt Taibbi – Racket News</p>
+          <p class="text-sm italic mt-3">"Local reporters told me off-record the victim had gang ties — none of that will appear in print."</p>
+          <p class="text-xs text-gray-600 mt-3">Unique: Exposed media self-censorship through anonymous journalist quotes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-10 bg-black text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 text-center">What People Are Saying</h2>
+      <div class="flex gap-5 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4">
+        <div class="snap-center shrink-0 w-80 bg-gray-900 rounded-xl p-5">
+          <p class="text-sm mb-4">"Finally a site that shows all sides without the spin. Bookmarked."</p>
+          <a href="#" class="text-blue-400 text-xs hover:underline">@truthseeker88 on BlueSky →</a>
+        </div>
+        <div class="snap-center shrink-0 w-80 bg-gray-900 rounded-xl p-5">
+          <p class="text-sm mb-4">"About time someone called out the media lies."</p>
+          <a href="#" class="text-blue-400 text-xs hover:underline">@MAGAWarrior22 on Truth Social →</a>
+        </div>
+        <div class="snap-center shrink-0 w-80 bg-gray-900 rounded-xl p-5">
+          <p class="text-sm mb-4">"This format is the future of news."</p>
+          <a href="#" class="text-blue-400 text-xs hover:underline">@realist99 on X →</a>
+        </div>
+        <div class="snap-center shrink-0 w-80 bg-gray-900 rounded-xl p-5">
+          <p class="text-sm mb-4">"Refreshing to see actual quotes side-by-side."</p>
+          <a href="#" class="text-blue-400 text-xs hover:underline">u/NeutralObserver on Reddit →</a>
+        </div>
+        <div class="snap-center shrink-0 w-80 bg-gray-900 rounded-xl p-5">
+          <p class="text-sm mb-4">"Shared this with my whole group chat. Everyone needs to see this."</p>
+          <a href="#" class="text-blue-400 text-xs hover:underline">John D. on Facebook →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+        `,
+      }}
+    />
+  );
+}
