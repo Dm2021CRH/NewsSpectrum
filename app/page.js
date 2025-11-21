@@ -70,11 +70,6 @@ export default function Home() {
   <section class="py-10 bg-black text-white">
     <!-- Your five comment carousel -->
   </section>
-
-</body>
-</html>
-        `,
-      }}
-    />
+  </>
   );
 }
