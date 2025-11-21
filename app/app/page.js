@@ -43,3 +43,31 @@ export default function Home() {
     />
   );
 }
+jsx<section class="py-8 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-2">How Outlets Headlined It</h2>
+      <p class="text-sm text-gray-600 mb-6">Exact headlines from major sources</p>
+      <div class="flex gap-5 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4">
+        <div class="snap-center shrink-0 w-80 bg-white rounded-xl shadow p-5 border">
+          <div class="flex items-center gap-3 mb-3"><div class="w-10 h-10 bg-red-600 rounded"></div><div class="font-bold">CNN · 2h ago</div></div>
+          <p class="text-sm leading-tight">"Another Preventable Tragedy in City Starved of Resources..."</p>
+          <div class="mt-3 text-xs font-medium text-blue-600">Bias 2.8 / 10</div>
+        </div>
+        <div class="snap-center shrink-0 w-80 bg-white rounded-xl shadow p-5 border">
+          <div class="flex items-center gap-3 mb-3"><div class="w-10 h-10 bg-blue-700 rounded"></div><div class="font-bold">Fox News · 1h ago</div></div>
+          <p class="text-sm leading-tight">"Soft-on-Crime Democrat Policies Claim Another Innocent Life..."</p>
+          <div class="mt-3 text-xs font-medium text-red-600">Bias 7.2 / 10</div>
+        </div>
+        <div class="snap-center shrink-0 w-80 bg-white rounded-xl shadow p-5 border">
+          <div class="flex items-center gap-3 mb-3"><div class="w-10 h-10 bg-gray-800 rounded"></div><div class="font-bold">Reuters · 3h ago</div></div>
+          <p class="text-sm leading-tight">"Man Fatally Stabbed in Chicago, Suspect in Custody"</p>
+          <div class="mt-3 text-xs font-medium text-gray-600">Bias 4.1 / 10</div>
+        </div>
+      </div>
+    </div>
+  </section>
+        `,
+      }}
+    />
+  );
+}
