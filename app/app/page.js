@@ -177,3 +177,36 @@ jsx<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     />
   );
 }
+jsx<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="bg-white border rounded-xl p-6 shadow">
+      <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-purple-600 rounded"></div><div class="font-bold">NPR</div></div>
+      <p class="font-semibold text-green-700 text-sm">Key Quote</p>
+      <p class="text-sm italic mb-3">"Residents say they're tired of the violence but feel abandoned by city leaders."</p>
+      <p class="font-semibold text-red-700 text-sm">Unique in Their Story</p>
+      <p class="text-sm">NPR uniquely featured audio interviews with residents and historians, exploring 1960s race riots as context — a community-voice approach not in Al Jazeera's global comparisons or CNBC's business focus.</p>
+      <p class="text-xs text-gray-500 mt-3">Lila Patel · 15 yrs</p>
+    </div>
+    <div class="bg-white border rounded-xl p-6 shadow">
+      <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-green-700 rounded"></div><div class="font-bold">CNBC</div></div>
+      <p class="font-semibold text-green-700 text-sm">Key Quote</p>
+      <p class="text-sm italic mb-3">"Chicago's crime wave continues to weigh on local businesses and property values."</p>
+      <p class="font-semibold text-red-700 text-sm">Unique in Their Story</p>
+      <p class="text-sm">CNBC uniquely cited Zillow data on 15% property value drops since 2023, with small business owner interviews — a financial lens not in NPR's resident stories or The Young Turks' economic rants.</p>
+      <p class="text-xs text-gray-500 mt-3">Mark Lee · 8 yrs</p>
+    </div>
+    <div class="bg-white border rounded-xl p-6 shadow">
+      <div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 bg-red-800 rounded"></div><div class="font-bold">The Young Turks</div></div>
+      <p class="font-semibold text-green-700 text-sm">Key Quote</p>
+      <p class="text-sm italic mb-3">"Corporate media won't tell you this is about poverty and failed neoliberal policies."</p>
+      <p class="font-semibold text-red-700 text-sm">Unique in Their Story</p>
+      <p class="text-sm">The Young Turks uniquely blamed "corporate greed" and 1980s privatization scandals, linking wage gaps — a radical critique not in CNBC's business focus or BBC's international view.</p>
+      <p class="text-xs text-gray-500 mt-3">Cenk Uygur · 16 yrs</p>
+    </div>
+  </div>
+        </div>
+    </section>
+        `,
+      }}
+    />
+  );
+}
